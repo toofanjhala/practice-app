@@ -11,7 +11,7 @@ function List(props) {
       {props.user.map((item) =>
         <li className="users"
         key={item.id}>
-          {item.name} ({item.age} years old)
+          {item.name}  ({item.age}years old )  college name is {item.college}
         </li>)}
     </ul>
   </NewCard>

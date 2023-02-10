@@ -5,9 +5,9 @@ import List from './component/list';
 function App() {
   const [userlist,setuserlist]=useState([])
 
-  function userHandler(value,Age){
+  function userHandler(value,Age,College){
     setuserlist((prevstat)=>{
-      return [...prevstat,{name:value,age:Age,id:Math.random().toString()}]
+      return [...prevstat,{name:value,age:Age, college:College,id:Math.random().toString()}]
     })
   }
   return (
