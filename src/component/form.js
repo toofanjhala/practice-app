@@ -3,6 +3,7 @@ import "./card.css"
 import Card from "./card";
 import Button from "./button";
 import Errormodal from "./errormodal";
+import Wrapper from "./helper/wrapper";
 
 //import List from "./list";
 function Form(props) {
@@ -41,7 +42,7 @@ function Form(props) {
     }
 
     return (
-        <div>
+        <Wrapper>
          {error && <Errormodal title={error.title} message={error.message} onChange={errorHandler}></Errormodal>}
         <Card>
             <form onSubmit={inputHandler}>
@@ -53,7 +54,7 @@ function Form(props) {
 
             </form>
         </Card>
-        </div>
+        </Wrapper>
     )
 }
 

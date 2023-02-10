@@ -14,7 +14,7 @@
     left: 10%;
     width: 100%;
     z-index: 100;
-    overflow: hidden;
+    overflow:hidden;
   }
   
   .header {
@@ -44,3 +44,5 @@
       width: 40rem;
     }
   }
+
+

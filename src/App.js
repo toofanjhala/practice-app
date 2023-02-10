@@ -11,11 +11,11 @@ function App() {
     })
   }
   return (
-    <div>
+    <React.Fragment>
       <Form onAdduser={userHandler}/>
       <List user={userlist}/>
       
-    </div>
+    </React.Fragment>
   );
 }
 
